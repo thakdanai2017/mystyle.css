@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<HEAD>
+<link rel="stylesheet" type="text/css" href="style/STYLE.css">
+<link rel="stylesheet" type="text/css" href="images/App_Themes/Aqua/Web/stylesx.css" />
+<link rel="stylesheet" type="text/css" href="images/App_Themes/HatchedGray/Web/stylesx.css" />
+
+</HEAD>
+<script type="text/javascript"> 
+		function windowwidth() {
+		  if (navigator.userAgent.indexOf("MSIE") > 0) w=document.body.clientWidth;
+		  else w=window.outerWidth;
+		  return w;
+		}
+		function windowheight() {
+		  if (navigator.userAgent.indexOf("MSIE") > 0) h=document.body.clientHeight;
+		  else h= window.outerHeight;
+		  return h;
+		}
+		var DHTML = (document.getElementById || document.all || document.layers);
+		if (DHTML) {
+		  var obj=document.getElementById("waitDiv");
+		  obj.style.left=(windowwidth()-waitIMG.width)/2;
+		  obj.style.top=(windowheight()-waitIMG.height)/2;
+		}
+		function ap_getObj(name) { 
+		  if (document.getElementById) { 
+			return document.getElementById(name).style; 
+		  } else if (document.all) { 
+			return document.all[name].style; 
+		  } else if (document.layers) { 
+			return document.layers[name]; 
+		  } 
+		} 
+		function ap_showWaitMessage(div, flag) { 
+		  if (!DHTML) return; 
+		  var x = ap_getObj(div); x.visibility = (flag) ? 'visible':'hidden'
+		} 
+
+		ap_showWaitMessage('waitDiv', 1); //แสดงในครั้งแรก
+</script>		<script type="text/javascript">
+
+			function chk_lang(langid,xpage){
+					var i_lang=langid; 
+					var x = xpage;
+						
+						if (x!="enrollpointx.asp")
+						{
+													
+						
+						document.cookie = "CKLANG=" +i_lang+ ";";
+						document.FRM_LANG.submit();
+						}
+
+					}   
+		</script>
+<body>
+
+<h2>วิชาที่ลงทะแบียน</h2>
+<p>เงินมีไม่มีก็ต้องจ่ายนะครับ<strong></strong></p>
+
+<div style="overflow-x:auto;">
+  
+<div class='headerdetail'>&nbsp;</div><BR><DIV ALIGN=CENTER><BR><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0><TR><TD><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0><TR><TD BGCOLOR=#008080 ALIGN=CENTER class='tableheaderdetail'><B>วิชาที่ลงทะเบียน</B><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1><TR><TD BGCOLOR=#008080><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0><TR><TD BGCOLOR=#FFFFFF><TABLE BORDER=0 CELLSPACING=2 CELLPADDING=0 width=740><TR BGCOLOR=#F6F6FF class='headerdetail'>
+    <TD ALIGN=CENTER><FONT COLOR=#0000FF>รหัสวิชา</TD><TD ALIGN=CENTER><FONT COLOR=#0000FF>ชื่อรายวิชา</TD><TD ALIGN=CENTER><FONT COLOR=#0000FF>กลุ่ม</TD><TD ALIGN=CENTER><FONT COLOR=#0000FF>หน่วยกิต</TD><TD ALIGN=CENTER WIDTH=150 colspan="2"><FONT COLOR=#0000FF>อาจารย์ผู้สอน</TD><td></td></TR>
+    <TR VALIGN=TOP  class='normaldetail'><TD>&nbsp;&nbsp;228102&nbsp;&nbsp;</TD><TD>Art of Speaking and Presentation<BR>ศิลปะการพูดและการนำเสนอ</TD><TD ALIGN=CENTER>6</TD><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>อาจารย์เสาวคนธ์ วงศ์ศุภชัยนิมิต</TD></TR>
+    <TR VALIGN=TOP  class='normaldetail'><TD>&nbsp;&nbsp;228202&nbsp;&nbsp;</TD><TD>Academic Article and Research Writing<BR>การเขียนบทความวิชาการและงานวิจัย</TD><TD ALIGN=CENTER>2</TD><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>อาจารย์ ดร.ขจิตา ศรีพุ่ม</TD></TR>
+    <TR VALIGN=TOP  class='normaldetail'><TD>&nbsp;&nbsp;70110459&nbsp;&nbsp;</TD><TD>Sex Behavior and Safety Precautions<BR>พฤติกรรมทางเพศและความปลอดภัย</TD><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>2</TD><TD ALIGN=CENTER>อาจารย์ ดร.อุษา ฮกยินดี</TD></TR>
+    <TR VALIGN=TOP  class='normaldetail'><TD>&nbsp;&nbsp;887230&nbsp;&nbsp;</TD><TD>Computer Networks<BR>เทคโนโลยีเครือข่ายคอมพิวเตอร์</TD><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>ผู้ช่วยศาสตราจารย์ ดร.ณัฐนนท์ ลีลาตระกูล</TD></TR>
+    <TR VALIGN=TOP  class='normaldetail'><TD>&nbsp;&nbsp;887260&nbsp;&nbsp;</TD><TD>Human and Computer Interaction<BR>ปฏิสัมพันธ์ระหว่างมนุษย์และคอมพิวเตอร์</TD><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>อาจารย์วีระ เกษตรสิน</TD></TR>
+    <TR VALIGN=TOP  class='normaldetail'><TD>&nbsp;&nbsp;887371&nbsp;&nbsp;</TD><TD>Web Programming<BR>การเขียนโปรแกรมบนเว็บ</TD><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>3</TD><TD ALIGN=CENTER>อาจารย์วิทวัส พันธุมจินดา</TD></TR>
+
+</TABLE>
+
+</div>
+
+</body>
+</html>
